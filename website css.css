@@ -10,23 +10,83 @@ li {
     float: left;
 }
 
-li a {
+li a { padding: 15px 25px;
+  font-size: 24px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  
+  border: none;
+  border-radius: 15px;
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 17px 19px;
     text-decoration: none;
 }
 
 li a:hover {
-    background-color: #111;
+    background-color: #b30000 ;
 }
 body {
-    background-image: url("http://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg"); color: #ffffff
+    background-image: url("http://htmlcolorcodes.com/assets/images/html-color-codes-color-tutorials-hero-00e10b1f.jpg"); color: #ffffff; background-repeat: no-repeat;
+   
+    background-attachment: fixed;
 }
-.floating-box {
-    float: left;
-    width: 150px;
-    height: 75px;
-    margin: 50px;
+  .button {
+    background-color:#ff8080 ;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 700px){
+    .responsive {
+        width: 49.99999%;
+        margin: 6px 0;
     }
+}
+
+@media only screen and (max-width: 500px){
+    .responsive {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+ footer{background-color: #ff8080; color: #ffffff; padding: 20px 0;   display: block;}
+footer .company-name{color: #550230; font-weight: bold; font-size: 14px;}
+footer h4{font-size: 12px; font-weight: bold; text-transform: uppercase;}
+footer p{line-height: 20px; margin: 0;}
+  
+.newspaper {
+    -webkit-column-count: 2; /* Chrome, Safari, Opera */
+    -moz-column-count: 2; /* Firefox */
+    column-count: 2;
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+}
+table, td, th {    
+    border: 1px solid #ddd;
+    text-align: left;background-color:#b30047
+}
+
+table {
+    border-collapse: collapse;
+    width: 75%;
+}
+
+th, td {
+    padding: 15px;
+}
